@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerBackground="#215785"
+        android:numbersBackgroundColor="#A9CDF8"
+        android:numbersSelectorColor="#54669E" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#651717"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/calendarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#95D2ED"
+            android:textColor="@color/black"
+            android:text="날짜선택" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="right">
+        <Button
+            android:id="@+id/alarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#95D2ED"
+            android:textColor="@color/black"
+            android:text="알림 저장"/>
+    </LinearLayout>
+
+</LinearLayout>
